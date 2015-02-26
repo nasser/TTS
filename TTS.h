@@ -17,6 +17,7 @@
 #include <Arduino.h>
 #include <inttypes.h>
 #include "english.h"
+#include "stdio.h"
 
 class TTS {
   public:
@@ -31,6 +32,8 @@ class TTS {
      * speaks a string of (english) text
      */
     void sayText(const char *text);
+    
+    void saySomethingElse(const char *text);
 
     /**
      * speaks a string of phonemes
